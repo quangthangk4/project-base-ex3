@@ -1,0 +1,52 @@
+:root {
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@keyframes border_hover {
+    from{
+        transform: scaleX(0);
+    }
+    to{
+        transform: scaleX(1);
+    }
+}
+
+.padding-content {
+    padding: 0 16px !important;
+}
+
+.content__heading {
+    font-size: 30px;
+    border-bottom: 3px solid #ffc107;
+    margin: 10px 0;
+}
+
+.margin-top-32 {
+    margin-top: 32px !important;
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>CV CLean</title>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="row no-gutters">
+            <div class="header__mobile c-12 m-0 l-0">
+                <a href="#home" class="header__mobile-home">CURRICULUM VITAE</a>
+                <i class="fa-solid fa-bars" onclick="ShowHideSubNav()"></i>
+            </div>
+            <div class="header__mobile-menu js-show-hide" onclick="ShowHideSubNav()">
+                <a href="#about" class="header__mobile-item">ABOUT</a>
+                <a href="#resume" class="header__mobile-item">RESUME</a>
+                <a href="#contact" class="header__mobile-item">CONTACT</a>
+            </div>
+
+            <div class="sidebar col l-3 m-3 c-12">
+                <img src="./assets/img/avatar.png" alt="avatar" class="sidebar__avatar">
+
+                <div class="sidebar__social">
+                    <a href="#" class="sidebar__social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-facebook">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="sidebar__social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-instagram">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="#" class="sidebar__social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-twitter">
+                            <path
+                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#" class="sidebar__social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-linkedin">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="sidebar__download">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="sidebar__download-link">
+                        <i class="fa-solid fa-download"></i>
+                        <span class="hide-on-tablet">DOWNLOAD CV</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="content col l-9 m-9 c-12 l-o-3 m-o-3">
+                <div class="content__container">
+
+                    <div class="header hide-on-mobile">
+                        <a href="#home" class="header__home nav__hover">CURRICULUM VITAE</a>
+                        <div class="header__list">
+                            <a href="#about" class="header__item nav__hover">ABOUT</a>
+                            <a href="#resume" class="header__item nav__hover">RESUME</a>
+                            <a href="#contact" class="header__item nav__hover">CONTACT</a>
+                        </div>
+                    </div>
+
+                    <div class="content__main">
+                        <div id="home" class="padding-content">
+                            <p class="home__quote">&#34;The mind is the limit. When you face your struggles, you
+                                overcome them.&#34;</p>
+                            <h1 class="home__infor">John Doe (35)</h1>
+                            <h2 class="home__job">Community manager</h2>
+                        </div>
+
+                        <div id="about" class="padding-content">
+                            <h2 class="content__heading">ABOUT</h2>
+                            <p class="about__text margin-top-32">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor sollicitudin
+                                efficitur. Integer posuere odio vel ullamcorper euismod. Aliquam sit amet nulla tortor.
+                                Integer vehicula nunc et condimentum feugiat. Aenean tempor, dolor in pharetra euismod,
+                                lacus eros suscipit massa, in aliquet risus orci non leo.
+                            </p>
+                            <p class="about__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor sollicitudin
+                                efficitur. Integer posuere odio vel ullamcorper euismod. Aliquam sit amet nulla tortor.
+                                Integer vehicula nunc et condimentum feugiat. Aenean tempor, dolor in pharetra euismod,
+                                lacus eros suscipit massa, in aliquet risus orci non leo.
+                            </p>
+                            <p class="about__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor sollicitudin
+                                efficitur. Integer posuere odio vel ullamcorper euismod. Aliquam sit amet nulla tortor.
+                                Integer vehicula nunc et condimentum feugiat. Aenean tempor, dolor in pharetra euismod,
+                                lacus eros suscipit massa, in aliquet risus orci non leo.
+                            </p>
+                        </div>
+
+                        <div id="resume" class="padding-content">
+                            <h2 class="content__heading">RESUME</h2>
+                            <div class="content__parts padding-content margin-top-32">
+                                <h3 class="content__parts-heading">MY EMPLOYMENT HISTORY</h3>
+                                <div class="content__parts-mbottom">
+                                    <h4>Community Manager at the Company-X</h4>
+                                    <p>September 2020 - Present</p>
+                                    <ul class="content__parts-list">
+                                        <li class="content__parts-item">Ensured that published content meets brand
+                                            guidelines and overall communication styles</li>
+                                        <li class="content__parts-item">Built relations with the online community</li>
+                                        <li class="content__parts-item">Implemented social media strategies to increase
+                                            engagement and followers</li>
+                                    </ul>
+                                </div>
+                                <div class="content__parts-mbottom">
+                                    <h4>Social Community Manager at the Company-Y</h4>
+                                    <p>January 2017 - June 2020</p>
+                                    <ul class="content__parts-list">
+                                        <li class="content__parts-item">Ensured that audience growth rate is in increase
+                                            through social networs</li>
+                                        <li class="content__parts-item">Managed social media campaigns for various
+                                            social media platforms to align with marketing strategies</li>
+                                        <li class="content__parts-item">Monitored and provided feedback on
+                                            engagement/conversation via social media channels to leadership</li>
+                                    </ul>
+                                </div>
+                                <div class="content__parts-mbottom">
+                                    <h4>Social Community Manager at the Company-Z</h4>
+                                    <p>January 2014 - April 2016</p>
+                                    <ul class="content__parts-list">
+                                        <li class="content__parts-item">Organized and managed community events to boost
+                                            brand awareness</li>
+                                        <li class="content__parts-item">Monitored, tracked and reported on feedback and
+                                            online reviews</li>
+                                        <li class="content__parts-item">Provided engaging text, image and video content
+                                            for all social media and professional accounts</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="content__parts padding-content margin-top-32">
+                                <h3 class="content__parts-heading">MY EDUCATION</h3>
+                                <div class="content__parts-mbottom">
+                                    <h4>College diploma, College of management, Houston</h4>
+                                    <p>October 2008 - July 2013</p>
+                                </div>
+                                <div class="content__parts-mbottom">
+                                    <h4>Highschool diploma, XYZ Highschool, Houston</h4>
+                                    <p>October 2004 - July 2008</p>
+                                </div>
+                            </div>
+
+                            <div class="content__parts padding-content margin-top-32">
+                                <h3 class="content__parts-heading">MY SKILLS</h3>
+                                <div class="content__parts-mbottom">
+                                    <h4>Soft skills</h4>
+                                    <ul class="content__parts-list">
+                                        <li class="content__parts-item">I have excelent communication skill and
+                                            confidence in front of an audience</li>
+                                        <li class="content__parts-item">I have a talent for investigating and
+                                            researching different processes to offer different improvements and solution
+                                            for the benefit of the organization</li>
+                                        <li class="content__parts-item">Provided engaging text, image and video content
+                                            for all social media and professional accounts</li>
+                                    </ul>
+                                </div>
+                                <div class="content__parts-mbottom">
+                                    <h4>Technical skills</h4>
+                                    <ul class="content__parts-list">
+                                        <li class="content__parts-item">I have a great experience with MS Office tools
+                                        </li>
+                                        <li class="content__parts-item">I am proficient in technical writing</li>
+                                        <li class="content__parts-item">Provided engaging text, image and video content
+                                            for all social media and professional accounts</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="content__parts padding-content margin-top-32">
+                                <h3 class="content__parts-heading">MY HOBBIES AND INTERESTS</h3>
+                                <div class="content__parts-mbottom">
+                                    <ul class="content__parts-list">
+                                        <li class="content__parts-item">I love mountain hiking and cycling in my free
+                                            time</li>
+                                        <li class="content__parts-item">I like to play board games with other people
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="content__parts padding-content margin-top-32">
+                                <h3 class="content__parts-heading">MY REFERENCES</h3>
+                                <div class="content__parts-mbottom">
+                                    <h4>Jane Doe, CEO at Company-Z</h4>
+                                    <ul class="content__parts-list">
+                                        <li class="content__parts-item">+0123456789</li>
+                                        <li class="content__parts-item">janedoe@companyz.com</li>
+                                    </ul>
+                                </div>
+                                <div class="content__parts-mbottom">
+                                    <h4>Margaret Johnson, Manager at Company-Y</h4>
+                                    <ul class="content__parts-list">
+                                        <li class="content__parts-item">+9876543210</li>
+                                        <li class="content__parts-item">mjohnson@companyy.com</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="contact" class="padding-content">
+                            <h2 class="content__heading">MY CONTACT DETAILS</h2>
+                            <div class="content__parts margin-top-32">
+                                <div class="content__parts-mbottom">
+                                    <ul class="content__parts-list">
+                                        <li class="content__parts-item">Name: Quang Thắng</li>
+                                        <li class="content__parts-item">Adress: KTX khu A
+                                        </li>
+                                        <li class="content__parts-item">Phone number: +0123456789</li>
+                                        <li class="content__parts-item">E-mail: mai@gmail.com</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="footer">
+                            <p>© 2024 - Quang Thắng</p>
+                            <p>Trang web được xây dựng bởi <a
+                                    href="https://www.facebook.com/profile.php?id=100024503231046">Quang Thắng</a> !</p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const buttonShowHideSubNav = document.querySelector(".js-show-hide");
+        function ShowHideSubNav() {
+            (buttonShowHideSubNav.style.display === "none") ? buttonShowHideSubNav.style.display = "block" : buttonShowHideSubNav.style.display = "none";
+        }
+        
+    </script>
+
+</body>
+
+</html>

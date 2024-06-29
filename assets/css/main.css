@@ -1,0 +1,186 @@
+.sidebar {
+    background-color: #262626;
+    text-align: center;
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.sidebar__avatar {
+    max-width: 60%;
+    max-height: 60%;
+    max-width: 250px;
+    border-radius: 50%;
+    border: 3px solid #fdf5e6;
+    margin-top: 50px;
+    object-fit: cover;
+}
+
+.sidebar__social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4px 8px;
+    margin-top: 16px;
+}
+
+.sidebar__social-link {
+    color: #fdf5e6;
+    text-decoration: none;
+    padding: 28px;
+    transition: all 0.1s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.sidebar__social-link:hover {
+    color: #ffc107;
+}
+
+.sidebar__download {
+    padding: 16px 24px;
+}
+
+.sidebar__download-link {
+    color: #000;
+    background-color: #ffc107;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 16px 24px;
+    border-radius: 2px;
+    display: inline-block;
+    transition: all 0.1s;
+}
+
+
+
+.sidebar__download-link:hover {
+    color: #fff;
+    background-color: #ff5722;
+}
+
+.sidebar__download-link span{
+    padding-left: 16px;
+}
+
+.content {
+    color: #000;
+}
+
+.content__container {
+    padding: 12px 24px;
+}
+
+.header {
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.header a {
+    padding: 8px 16px;
+    color: #000;
+    position: relative;
+}
+
+.nav__hover:hover.nav__hover::before {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid #4CAF50;
+    animation: border_hover linear 0.1s;
+}
+
+.header__home {
+    display: inline-block ;
+}   
+
+.header__item {
+    display: inline-block;
+}
+
+/* main */
+
+#home {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 64px;
+    text-align: center;
+}
+
+.home__quote {
+    font-size: x-large;
+    font-style: italic;
+    font-weight: bolder;
+    padding: 24px 0;
+}
+
+.home__infor {
+    font-size: 6.4rem;
+    font-weight: bold;
+}
+
+.home__job {
+    font-size: 3rem;
+    margin-top: 12px;
+}
+
+/* about */
+#about,
+#resume,
+#contact {
+    margin-top: 180px;
+}
+
+.about__text {
+    font-size: 1.8rem;
+    margin: 18px 0;
+}
+
+.content__parts h4 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.content__parts p {
+    padding: 5px 0 15px 0;
+}
+
+.content__parts-heading {
+    font-size: 2.4rem;
+    margin: 36px 0 10px 0;
+}
+
+.content__parts-mbottom {
+    margin-bottom: 16px;
+}
+
+.content__parts-item {
+    font-weight: 500;
+    padding: 8px 0;
+}
+
+.footer {
+    margin-top: 64px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    margin-bottom: 32px;
+}
+
+.footer p {
+    margin-top: 24px;
+}
+
+.footer a {
+    color: #ff5722;
+}
+
+.footer a:hover {
+    opacity: 0.5;
+}
